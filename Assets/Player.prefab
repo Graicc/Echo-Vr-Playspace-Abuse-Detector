@@ -239,7 +239,6 @@ MonoBehaviour:
   good: {fileID: 2100000, guid: 34b7744e817eedd4590dca740d03105a, type: 2}
   bad: {fileID: 2100000, guid: 2a08b97e2d108934e8392a2548b606df, type: 2}
   isAbuse: 0
-  echoManager: {fileID: 0}
 --- !u!1 &6480030591925339092
 GameObject:
   m_ObjectHideFlags: 0

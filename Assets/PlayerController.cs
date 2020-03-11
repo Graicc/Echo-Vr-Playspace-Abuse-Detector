@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         text.text = name;
         manager = GameObject.Find("EchoManager").GetComponent<EchoManager>();
-        playspace.transform.localScale = Vector3.one * manager.settings.diameter;
+        playspace.transform.localScale = new Vector3(manager.settings.diameter, manager.settings.height / 2, manager.settings.diameter);
     }
 
     // Update is called once per frame

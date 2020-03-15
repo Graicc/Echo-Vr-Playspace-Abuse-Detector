@@ -1,7 +1,7 @@
 # Echo VR Playspace Abuse Detector
 Tired of not knowing whether or not something was playspace abusing? Try Echo-Vr-Playspace-Abuse-Detector, the easiest way to accuse ~~jay~~ anyone of stremming.
 
-## Instalation
+## Installation
 1. Download the latest Build.zip from the [release page](https://github.com/Graicc/Echo-Vr-Playspace-Abuse-Detector/releases/latest)
 2. Extract the zip and run `EchoVrPlayspaceAbuseDetector.exe`
 
@@ -17,10 +17,10 @@ The default settings are:
 
 ## Interface
 ![Diagram](docs/diagram.png)
-Space can also be used for init, and 1 can be used for reload. Reload and init are basically the same, but reload just snaps playspaces back instead of redoing the entire setup process.
+Space can also be used for init, and 1 can be used for reloading. Reload and init are basically the same, but reload just snaps playspaces back instead of redoing the entire setup process.
 
 ## Methodology
-Every player has a playspace bubble around them that follows them around using the velocity from the API. Additionally, the bubble moves towards the players head position at 5 cm/s (adjustable in settings file).
+Every player has a playspace bubble around them that follows them around using the velocity from the API. Additionally, the bubble moves towards the player's head position at 5 cm/s (adjustable in the settings file).
 
 A stun would probably be the best punishment, although fading the screen to black like in the Lone Echo II trailer could also work. It would also need some sort of warning before stunning the player.
 

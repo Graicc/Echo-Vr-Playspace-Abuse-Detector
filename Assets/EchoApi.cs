@@ -47,6 +47,7 @@ public class EchoApi : MonoBehaviour {
 [Serializable]
 public class EchoObject {
     public string game_status;
+    public string game_clock_display;
     public Team[] teams;
 }
 
@@ -58,8 +59,6 @@ public class Team {
 [Serializable]
 public class Player {
     public string name;
-    // public int level;
-    public int number;
     public float[] velocity;
     public float[] position;
     public float[] forward;

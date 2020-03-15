@@ -10,6 +10,7 @@ public class EchoManager : MonoBehaviour
     List<GameObject> players;
 
     public Text abusers;
+    public Text timer;
 
     string oldStatus;
 
@@ -33,7 +34,7 @@ public class EchoManager : MonoBehaviour
                 PlayerController newController = player.GetComponent<PlayerController>();
                 newController.teamIndex = i; // TODO: This should probally be a fucntion in the class
                 newController.playerIndex = j;
-                Debug.Log("New player: " + team[j].name + " | " + team[j].number);
+                Debug.Log("New player: " + team[j].name);
                 player.name = team[j].name;
                 players.Add(player);
             }
@@ -67,6 +68,9 @@ public class EchoManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
             Reload();
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
         if (EchoApi.instance.data.game_status != oldStatus)
             Reload();
         oldStatus = EchoApi.instance.data.game_status;
@@ -78,5 +82,7 @@ public class EchoManager : MonoBehaviour
                     abusers.text = abusers.text + player.name + "\n";
             }
         }
+
+        timer.text = EchoApi.instance.data.game_clock_display;
     }
 }

@@ -16,7 +16,7 @@ The default settings are:
 * Speed: 0.05000000074505806 (5cm/s including floating point error)
 
 ## Interface
-![Diagram](docs/diagram.png)
+![Diagram](docs/Diagram.png)
 Space can also be used for init, and 1 can be used for reloading. Reload and init are basically the same, but reload just snaps playspaces back instead of redoing the entire setup process.
 
 ## Methodology

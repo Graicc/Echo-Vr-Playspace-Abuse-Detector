@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         playerPoint.transform.position = Utils.FloatToVector(playerData.position);
 
         playspace.transform.position += Utils.FloatToVector(playerData.velocity) * Time.deltaTime;
-        playspace.transform.position = Vector3.MoveTowards(playspace.transform.position, playerPoint.transform.position, manager.settings.speed * Time.deltaTime); // TODO: Settings Static Class with settings that are loaded from json maybee idk
+        playspace.transform.position = Vector3.MoveTowards(playspace.transform.position, playerPoint.transform.position, manager.settings.speed * Time.deltaTime);
 
         isAbuse = !playspace.GetComponent<Collider>().bounds.Contains(playerPoint.transform.position);
         if (isAbuse)

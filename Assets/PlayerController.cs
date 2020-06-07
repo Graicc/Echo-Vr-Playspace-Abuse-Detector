@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         text.text = name;
         manager = GameObject.Find("EchoManager").GetComponent<EchoManager>();
-        playspace.transform.localScale = new Vector3(manager.settings.diameter, manager.settings.height / 2, manager.settings.diameter);
+        playspace.transform.localScale = Vector3.one * manager.settings.diameter;
     }
 
     // Update is called once per frame
@@ -36,6 +36,10 @@ public class PlayerController : MonoBehaviour
     {
         Player playerData = EchoApi.instance.data.teams[teamIndex].players[playerIndex];
         playerPoint.transform.position = Utils.FloatToVector(playerData.position);
+
+        if (playerPoint.transform.position.z < -61 || playerPoint.transform.position.z > 61) { // In team room
+            Reload();
+        }
 
         playspace.transform.position += Utils.FloatToVector(playerData.velocity) * Time.deltaTime;
         playspace.transform.position = Vector3.MoveTowards(playspace.transform.position, playerPoint.transform.position, manager.settings.speed * Time.deltaTime);

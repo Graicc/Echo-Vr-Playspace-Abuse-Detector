@@ -60,7 +60,7 @@ public class EchoManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
             Init();

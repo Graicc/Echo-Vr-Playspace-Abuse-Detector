@@ -19,7 +19,7 @@ public class EchoApi : MonoBehaviour {
         else if (instance != this)
             Destroy(gameObject);
 
-        StartCoroutine(GetData("http://127.0.0.1/session"));
+        StartCoroutine(GetData("http://127.0.0.1:6721/session"));
     }
 
     IEnumerator GetData(string uri) {

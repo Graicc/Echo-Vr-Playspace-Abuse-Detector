@@ -4,9 +4,12 @@ ScriptsOnlyBuild:
     - EchoApi
     - EchoManager
     - PlayerController
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -42,32 +45,34 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9676}
+      Script: {instanceID: 11158}
     - Class: 114
-      Script: {instanceID: 9826}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 11356}
     - Class: 114
-      Script: {instanceID: 10234}
+      Script: {instanceID: 11738}
     - Class: 114
-      Script: {instanceID: 10574}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 10956}
+      Script: {instanceID: 12530}
     - Class: 114
-      Script: {instanceID: 11016}
+      Script: {instanceID: 12594}
     - Class: 114
-      Script: {instanceID: 11120}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 12946}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 136
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -398,7 +403,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 75fc86d475834f8134e86246b50e3edc
+      Hash: 19abf50a40524ff3b697865f6a6589ef
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EchoManager
@@ -464,7 +469,13 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 20eeaeae829475b5e354d1f626c51a2b
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
